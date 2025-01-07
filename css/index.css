@@ -1,0 +1,123 @@
+:root{
+    --background-color:#c41515;
+    --select-color:rgb(87, 177, 218);
+    --font-size:16px;
+    --font-family:'Courier New', Courier, monospace;
+    
+}
+
+*{
+    padding: 0;
+    margin:  0;
+    box-sizing: content-box;
+   
+}
+
+
+body{
+    font-size: var(--font-size);
+    font-family:var(--font-family);
+}
+
+header{
+    text-align: center;
+    background-color: var(--background-color);
+    color: white;
+    height: 5vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    
+    
+}
+
+
+main{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 90vh;
+    width: 100%;
+}
+
+#search{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#btn
+{
+    width: 10%;
+    padding: 10px ;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--background-color);
+}
+
+#searchbox{
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--background-color);
+}
+
+#list{
+    
+    width: 95%;
+    height: 80vh;
+    overflow-y: scroll;
+    padding: 30px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+   
+}
+
+.card
+{
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    color: black;
+    padding-top: 20px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    line-height: 30px;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card img{
+    object-fit: cover;
+    width: 50%;
+}
+
+.card a
+{
+    text-decoration: none;
+    color: var(--background-color);
+    cursor: pointer;
+}
+
+.card a:hover{
+    color: var( --select-color);
+}
+
+.card:hover
+{
+    transform: scale(1.1);
+    transition: all ease 0.3;
+}
