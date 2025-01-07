@@ -1,0 +1,2 @@
+# pokeapi
+practica de pokeapi
